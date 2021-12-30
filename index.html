@@ -1,188 +1,389 @@
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<title>Renzo Guarise</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="images/robot.svg">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Renzo Guarise</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="images/robot.svg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		.collapsible {
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			border-radius: 30px;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/me.jpeg" alt="" /></span>
-					<h1 id="logo"><a href="#">Renzo Guarise</a></h1>
-					<p class="lead text-muted">
-						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-							<path fill="currentColor" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
-						</svg>
-						Mechatronics Engineering Student - <a href="https://ingenieria.uncuyo.edu.ar/" target="_blank">FING UNCuyo</a>
+		.active,
+		.collapsible:hover {
+			background-color: #555;
+		}
+
+		.collapsible:after {
+			content: '\002B';
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			content: "\2212";
+		}
+
+		.content {
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
+			border-radius: 30px;
+		}
+	</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<span class="image avatar"><img src="images/me.jpeg" alt="" /></span>
+			<h1 id="logo"><a href="#">Renzo Guarise</a></h1>
+			<p class="lead text-muted">
+				<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+					<path fill="currentColor"
+						d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+				</svg>
+				Mechatronics Engineering Student - <a href="https://ingenieria.uncuyo.edu.ar/" target="_blank">FING
+					UNCuyo</a>
+			</p>
+
+			<p class="lead text-muted">
+				<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+					<path fill="currentColor"
+						d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
+				</svg>
+				Projects: IA | Robotic | Control | Full Stack
+			</p>
+			</p>
+			<p class="lead text-muted">
+				<i>Mendoza, Argentina</i>
+			</p>
+			<a class="badge badge-primary mail pop" onclick="copyToClipboard('#mymail1')" data-toggle="popover"
+				data-placement="right" data-content="Correo copiado!">
+				<span id="mymail1">renzoguari99@gmail.com</span>
+			</a>
+
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#one" class="active">About me</a></li>
+				<li><a href="#two">Things I Can Do</a></li>
+				<li><a href="#three">A Few Proyects</a></li>
+				<li><a href="#four">Experience</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<ul class="icons">
+				<li><a href="https://github.com/guari12" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/renzoe-guarise" class="icon brands fa-linkedin"><span
+							class="label">Github</span></a></li>
+			</ul>
+		</footer>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one">
+				<div class="image main" data-position="center">
+					<img src="images/earth.jpg" alt="" />
+				</div>
+				<div class="container">
+					<header class="major">
+						<h2>Who I am?</h2>
+						<p>I am an advanced student in mechatronics engineering with a strong orientation to artificial
+							intelligence and programming. </p>
+					</header>
+					<p>I am passionate about math, data, learning, new technologies and challenges. I am self-taught and
+						very curious. And I really love group work because I think that is where I learn and work best.
 					</p>
-	
-					<p class="lead text-muted">
-						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-							<path fill="currentColor" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
-						</svg>
-						Projects: IA | Robotic | Control | Full Stack
-					</p>
-				</p>
-				<p class="lead text-muted">
-					<i>Mendoza, Argentina</i>
-				</p>
-				<a 	
-					class="badge badge-primary mail pop"
-					onclick="copyToClipboard('#mymail1')"
-					data-toggle="popover"
-					data-placement="right"
-					data-content="Correo copiado!">
-					<span id="mymail1">renzoguari99@gmail.com</span>
-				</a>
-				
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About me</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Proyects</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://github.com/guari12" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/renzoe-guarise" class="icon brands fa-linkedin"><span class="label">Github</span></a></li>
-					</ul>
-				</footer>
+				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<!-- Two -->
+			<section id="two">
+				<div class="container">
+					<h3>Things I Can Do</h3>
+					<p>
+					<h4>Soft skills</h4>
+					</p>
+					<ul class="feature-icons">
+						<li class="icon solid fa-users">Group work</li>
+						<li class="icon solid fa-lightbulb">Problem-solving</li>
+						<li class="icon solid fa-people-carry">Leadership </li>
+						<li class="icon solid 	fa-comments">Assertive communication</li>
+						<li class="icon solid fa-retweet">Adaptability </li>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/earth.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Who I am?</h2>
-										<p>I am an advanced student in mechatronics engineering with a strong orientation to artificial intelligence and programming. </p>
-									</header>
-									<p>I am passionate about math, data, learning, new technologies and challenges. I am self-taught and very curious. And I really love group work because I think that is where I learn and work best. </p>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p><h4>Soft skills</h4></p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-users">Group work</li>
-										<li class="icon solid fa-lightbulb">Problem-solving</li>
-										<li class="icon solid fa-people-carry">Leadership </li>
-										<li class="icon solid 	fa-comments">Assertive communication</li>
-										<li class="icon solid fa-retweet">Adaptability </li>
-										
-										<li class="icon solid fa-smile">Ethics, commitment, honesty and integrity </li>
-									</ul>
-									<p><h4>Technical skills</h4></p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-tools"><b>Python</b> ( GUI | OOP | DB )</li>
-										<li class="icon solid fa-tools"><b>Tensorflow, Pandas </b> ( IA & ML )</li>
-										<li class="icon solid fa-tools"><b>Front-end</b>( HTML | CSS | JS )</li>
-										<li class="icon solid fa-tools"><b>SQL</b> (Relational Database) </li>
-										<li class="icon solid fa-tools"><b>OpenCv </b>(python)</li>
-										<li class="icon solid fa-tools">Version Control <b>(Git | Github)</b> </li>
-										<li class="icon solid fa-tools"><b>Matlab </b>  (Robotics & Science)</li>
-										<li class="icon solid fa-tools"><b>Simulink </b> (Simulation)</li>
-										<!-- <li class="icon solid fa-tools"> SCADA & PLC (Automation)</li>
+						<li class="icon solid fa-smile">Ethics, commitment, honesty and integrity </li>
+					</ul>
+					<p>
+					<h4>Technical skills</h4>
+					</p>
+					<ul class="feature-icons">
+						<li class="icon solid fa-tools"><b>Python</b> ( GUI | OOP | DB )</li>
+						<li class="icon solid fa-tools"><b>Tensorflow, Pandas </b> ( IA & ML )</li>
+						<li class="icon solid fa-tools"><b>Front-end</b>( HTML | CSS | JS )</li>
+						<li class="icon solid fa-tools"><b>SQL</b> (Relational Database) </li>
+						<li class="icon solid fa-tools"><b>OpenCv </b>(python)</li>
+						<li class="icon solid fa-tools">Version Control <b>(Git | Github)</b> </li>
+						<li class="icon solid fa-tools"><b>Matlab </b> (Robotics & Science)</li>
+						<li class="icon solid fa-tools"><b>Simulink </b> (Simulation)</li>
+						<!-- <li class="icon solid fa-tools"> SCADA & PLC (Automation)</li>
 										<li class="icon solid fa-tools">SolidEdge (Mecanic dising and simulation) </li>
 										<li class="icon solid fa-tools"> Proteus (Electronic dising and simulation) </li>
 										<li class="icon solid fa-tools"> AVR Microcontrollers</li>
 										<li class="icon solid fa-tools">ARM Microcontrollers </li>
 										<li class="icon solid fa-tools">Java - Processing - Unity - Realidad Virtual</li> -->
-									</ul>
-									<p><h4>Languages skills</h4></p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-language"><b>English</b> <div class="row"> <a href="https://drive.google.com/file/d/1Jf5mj_-4yM5xNuJKEXtlROO8QUbATMYD/view?usp=sharing">Upper Intermediate (B2) </a></div><div class="row"> <p aling="center"> New Emi Institute - 7 years</p></div></li>
-										<li class="icon solid fa-language"><b>French</b> <div class="row"> <a href="https://drive.google.com/drive/folders/1XnOdZxKz4I60-Z7-SN2rZecgagUqC9j0?usp=sharing">Intermediate (B1) </a></div><div class="row"> <p aling="center"> French alliance </p></div></li>
-									</ul>
-								</div>
-							</section>
+					</ul>
+					<p>
+					<h4>Languages skills</h4>
+					</p>
+					<ul class="feature-icons">
+						<li class="icon solid fa-language"><b>English</b>
+							<div class="row"> <a
+									href="https://drive.google.com/file/d/1Jf5mj_-4yM5xNuJKEXtlROO8QUbATMYD/view?usp=sharing">Upper
+									Intermediate (B2) </a></div>
+							<div class="row">
+								<p aling="center"> New Emi Institute - 7 years</p>
+							</div>
+						</li>
+						<li class="icon solid fa-language"><b>French</b>
+							<div class="row"> <a
+									href="https://drive.google.com/drive/folders/1XnOdZxKz4I60-Z7-SN2rZecgagUqC9j0?usp=sharing">Intermediate
+									(B1) </a></div>
+							<div class="row">
+								<p aling="center"> French alliance </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>A Few Projects</h3>
-									<p>Due to lack of time I have not been able to publish all my projects but I will be updating it soon. </p>
-									<div class="features">
-										<article>
-											<a class="image" href=""><img src="images/Figure_1.jpeg" alt="" /></a>
-											<div class="inner">
-												<h4>Neuronal Networks</h4>
-												<p> A clustering and a regression project that were carried out with a fully connected feedforward neural network. 
-													<br> 
-													<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span class="label">Github</span></a>
-												</p>
-											</div>	
-										</article>
-										<article>
-											<a class="image" href=""><img src="images/cv.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Computer vision</h4>
-												<p>An artificial vision program for the recognition and classification of fruits. In this project I implemented a hybrid kmeans algorithm and a knn algorithm.
-													<br> 
-													<a href="https://github.com/renzo-guarise/cv" class="icon brands fa-github"><span class="label">Github</span></a>
-													
-												</p>
-											</div>	
-										</article>
-										<article>
-											<a class="image" href=""><img src="images/robot.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Robot Arm Control </h4>
-												<p>	Project of Graphical Interface and Client-Server Connection for the control of an ABB IRB 460 robot arm.
-													<br> 
-													<a href="https://www.youtube.com/watch?v=cZLyq6MeZRs" class="icon brands fa-youtube"><span class="label">YouTube</span></a>
-													<a href="https://github.com/renzo-guarise/RAC" class="icon brands fa-github"><span class="label">Github</span></a>
-												</p>
-											</div>	
-										</article>
-										<article>
-											<a class="image" href=""><img src="images/drone.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Drone for pest control by releasing flies  </h4>
-												<p>	Design of a mobile robot of the aerial type, more specifically, a drone. The implemented model corresponds to a drone of 6 elics for agricultural purposes, related to the control of pests by distribution of the Mediterranean fly. It is proposed a sectorized control aimed at particular clients who are looking for a more efficient solution than the conventional one. 
-													<br> 
-													<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing" class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-												</p>
-											</div>	
-										</article>
-										<article>
-											<a class="image" href=""><img src="images/r1.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Automation in waste separation </h4>
-												<p>	Urban waste separation application for subsequent treatment and recycling using a Robot Scara. The objective of the project is the development of the kinematics of the robot both inverse and direct, its control and the planning of the trajectories that will allow the robot to solve its task.  
-													<br> 
-													<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span class="label">YouTube</span></a>
-													<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing" class="icon brands fa-github"><span class="label">Github</span></a>
-												</p>
-												
-											</div>	
-										</article>
-									</div>
-								</div>
-							</section>
+			<!-- Three -->
+			<section id="three">
+				<div class="container">
+					<h3>A Few Projects</h3>
+					<div class="features">
+						<article>
+							<a class="image"><img src="images/cv.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Computer vision</h4>
+								<p>An artificial vision program for the recognition and classification of fruits. In
+									this project I implemented a hybrid kmeans algorithm and a knn algorithm.
+									<br>
+									<a href="https://github.com/renzo-guarise/cv" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/Figure_1.jpeg" alt="" /></a>
+							<div class="inner">
+								<h4>Neuronal Networks</h4>
+								<p> A clustering and a regression project that were carried out with a fully connected
+									feedforward neural network.
+									<br>
+									<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/robot.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Robot Arm Control </h4>
+								<p> Project of Graphical Interface and Client-Server Connection for the control of an
+									ABB IRB 460 robot arm.
+									<br>
+									<a href="https://www.youtube.com/watch?v=cZLyq6MeZRs"
+										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/RAC" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/balancin.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Balancín robot </h4>
+								<p> In this project we sought to make a rocking robot or also called an inverted
+									pendulum. To carry out this project, an accelerometer and gyroscope were used as a
+									sensor to be able to calculate the angular position of the system and thus carry out
+									a PID control looking for our robot to balance itself.
+									<br>
+									<a href="https://www.youtube.com/watch?v=VBSCI6RdObE"
+										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/balancin"
+										class="icon brands fa-github"><span class="label">Github</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/r1.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Automation in waste separation </h4>
+								<p> Urban waste separation application for subsequent treatment and recycling using a
+									Robot Scara. The objective of the project is the development of the kinematics of
+									the robot both inverse and direct, its control and the planning of the trajectories
+									that will allow the robot to solve its task.
+									<br>
+									<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span
+											class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/scara" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/vib.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Parametric analysis of a three-degree system
+									of freedom</h4>
+								<p> This project analyzes the response of a three-story portico to an excitement at its
+									base, similar to that of the Caucete earthquake. For this, the system was simplified
+									to three degrees of freedom, where each one represented a floor, and then a
+									parametric study was made based on different damping ratios.
+									<br>
+									<a href="https://drive.google.com/file/d/1atHmDowMB-mirxkTPEoG9BF4ByruUqTb/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</article>
+						<article>
+							<a class="image"><img src="images/drone.jpg" alt="" /></a>
+							<div class="inner">
+								<h4>Drone for pest control by releasing flies </h4>
+								<p> Design of a mobile robot of the aerial type, more specifically, a drone. The
+									implemented model corresponds to a drone of 6 elics for agricultural purposes,
+									related to the control of pests by distribution of the Mediterranean fly. It is
+									proposed a sectorized control aimed at particular clients who are looking for a more
+									efficient solution than the conventional one.
+									<br>
+									<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section id="four">
+				<div class="container">
+					<h3>Experience</h3>
+					<div class="card">
+						<button class="collapsible" type="button">
+							<i class="fas fa-code fa-lg"></i> <FONT FACE="impact">Web developer</font> @ Scholarship holder - NOV 2021 /
+							Now
+						</button>
+						<div class="content">
+							<div class="card-body">
+								<p>
+									<br>
+									Development and implementation of a web application, which allows the consultation, graphical and numerical, of the database of the Geodesy Laboratory of the UNCuyo. Visualization and statistical analysis of data. 
+								</p>
+								<ul class="ml-5">
+									<li> Design and creation of the laboratory website within the page of the Faculty of Engineering of the UNCuyo. </li> 
+									<li> Databases (<b> SQL </b>) - Design of relational models. </li>
+									<li> Analysis of the most representative metrics of the data. </li> 
+								</ul>
+								<p>
+									The functionalities of the app allow:
+								</p>
+								<ul class = "ml-5">
+								<li>
+								Consultation of the laboratory database.
+								</li>
+								<li>
+								View the data and its most important parameters.
+								</li>
+								<li>
+								Calculate and graph <b> statistics </b>.
+								</li> 
+								</ul>
+								<a href="https://youtu.be/bn5vpDVDzT8"
+										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+							</div>
+						</div>
+						<button class="collapsible" type="button">
+							<i class="fas fa-code fa-lg"></i> <FONT FACE="impact">Web developer</font> @ Scholarship holder - NOV 2021 /
+							Now
+						</button>
+						<div class="content">
+							<div class="card-body">
+								<p>
+									<br>
+									Development and implementation of a web application, which allows the consultation, graphical and numerical, of the database of the Geodesy Laboratory of the UNCuyo. Visualization and statistical analysis of data. 
+								</p>
+								<ul class="ml-5">
+									<li> Design and creation of the laboratory website within the page of the Faculty of Engineering of the UNCuyo. </li> 
+									<li> Databases (<b> SQL </b>) - Design of relational models. </li>
+									<li> Analysis of the most representative metrics of the data. </li> 
+								</ul>
+								<p>
+									The functionalities of the app allow:
+								</p>
+								<ul class = "ml-5">
+								<li>
+								Consultation of the laboratory database.
+								</li>
+								<li>
+								View the data and its most important parameters.
+								</li>
+								<li>
+								Calculate and graph <b> statistics </b>.
+								</li> 
+								</ul>
+								<a href="https://youtu.be/bn5vpDVDzT8"
+										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+							</div>
+						</div>
+						<script>
+							var coll = document.getElementsByClassName("collapsible");
+							var i;
 
-		<!-- Scripts -->
+							for (i = 0; i < coll.length; i++) {
+								coll[i].addEventListener("click", function () {
+									this.classList.toggle("active");
+									var content = this.nextElementSibling;
+									if (content.style.maxHeight) {
+										content.style.maxHeight = null;
+									} else {
+										content.style.maxHeight = content.scrollHeight + "px";
+									}
+								});
+							}
+						</script>
+					</div>
+				</div>
+
+			</section>
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -191,5 +392,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
