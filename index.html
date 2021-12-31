@@ -11,33 +11,37 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style>
 		.collapsible {
-			background-color: #777;
+			background-color: #4acaa8;
 			color: white;
 			cursor: pointer;
 			padding: 18px;
 			width: 100%;
 			border: none;
-			border-radius: 30px;
+			border-radius: 10px;
 			text-align: left;
 			outline: none;
 			font-size: 15px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
 		}
 
-		.active,
+		.act,
 		.collapsible:hover {
-			background-color: #555;
+			background-color: white;
+			color: #4acaa8;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 		}
 
 		.collapsible:after {
 			content: '\002B';
-			color: white;
 			font-weight: bold;
 			float: right;
 			margin-left: 5px;
 		}
 
-		.active:after {
+		.act:after {
 			content: "\2212";
+
 		}
 
 		.content {
@@ -46,7 +50,49 @@
 			overflow: hidden;
 			transition: max-height 0.2s ease-out;
 			background-color: #f1f1f1;
-			border-radius: 30px;
+			border-radius: 10px;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+		.mycard {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+
+			border-radius: 10px;
+		}
+
+		.mycard:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			transform: scale(1.05);
+
+		}
+
+		.myheader {
+			background-color: #4acaa8;
+			color: white;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			border-radius: 10px 10px 0px 0px;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+		}
+		.mycontainer {
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			background-color: #f1f1f1;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			border-radius: 0px 0px 10px 10px;
+		}
+
+		img.rounded-corners {
+			border-radius: 10px 10px 0px 0px;
 		}
 	</style>
 
@@ -98,7 +144,7 @@
 				<li><a href="https://github.com/guari12" class="icon brands fa-github"><span
 							class="label">Github</span></a></li>
 				<li><a href="https://www.linkedin.com/in/renzoe-guarise" class="icon brands fa-linkedin"><span
-							class="label">Github</span></a></li>
+							class="label">Linkedin</span></a></li>
 			</ul>
 		</footer>
 	</section>
@@ -190,107 +236,137 @@
 				<div class="container">
 					<h3>A Few Projects</h3>
 					<p></p>
-					<div class="features">
-						<article>
-							<a class="image"><img src="images/cv.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Computer vision</h4>
-								<p>An artificial vision program for the recognition and classification of fruits. In
-									this project I implemented a hybrid kmeans algorithm and a knn algorithm.
-									<br>
-									<a href="https://github.com/renzo-guarise/cv" class="icon brands fa-github"><span
-											class="label">Github</span></a>
-								</p>
+					<div class="row">
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/cv.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Computer vision</h4>
+									<p>An artificial vision program for the recognition and classification of fruits. In
+										this project I implemented a hybrid kmeans algorithm and a knn algorithm.
+										<br>
+										<a href="https://github.com/renzo-guarise/cv"
+											class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/Figure_1.jpeg" alt="" /></a>
-							<div class="inner">
-								<h4>Neuronal Networks</h4>
-								<p> A clustering and a regression project that were carried out with a fully connected
-									feedforward neural network.
-									<br>
-									<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span
-											class="label">Github</span></a>
-								</p>
+						</div>
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/Figure_1.jpeg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Neuronal Networks</h4>
+									<p> A clustering and a regression project that were carried out with a fully
+										connected
+										feedforward neural network.
+										<br>
+										<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span
+												class="label">Github</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/robot.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Robot Arm Control </h4>
-								<p> Project of Graphical Interface and Client-Server Connection for the control of an
-									ABB IRB 460 robot arm.
-									<br>
-									<a href="https://www.youtube.com/watch?v=cZLyq6MeZRs"
-										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
-									<a href="https://github.com/renzo-guarise/RAC" class="icon brands fa-github"><span
-											class="label">Github</span></a>
-								</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/robot.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Robot Arm Control </h4>
+									<p> Project of Graphical Interface and Client-Server Connection for the control of
+										an
+										ABB IRB 460 robot arm.
+										<br>
+										<a href="https://www.youtube.com/watch?v=cZLyq6MeZRs"
+											class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+										<a href="https://github.com/renzo-guarise/RAC"
+											class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/balancin.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Balancín robot </h4>
-								<p> In this project we sought to make a rocking robot or also called an inverted
-									pendulum. To carry out this project, an accelerometer and gyroscope were used as a
-									sensor to be able to calculate the angular position of the system and thus carry out
-									a PID control looking for our robot to balance itself.
-									<br>
-									<a href="https://www.youtube.com/watch?v=VBSCI6RdObE"
-										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
-									<a href="https://github.com/renzo-guarise/balancin"
-										class="icon brands fa-github"><span class="label">Github</span></a>
-								</p>
+						</div>
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/balancin.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Balancín robot </h4>
+									<p> In this project we sought to make a rocking robot or also called an inverted
+										pendulum. To carry out this project, an accelerometer and gyroscope were used as
+										a
+										sensor to be able to calculate the angular position of the system and thus carry
+										out
+										a PID control looking for our robot to balance itself.
+										<br>
+										<a href="https://www.youtube.com/watch?v=VBSCI6RdObE"
+											class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+										<a href="https://github.com/renzo-guarise/balancin"
+											class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/r1.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Automation in waste separation </h4>
-								<p> Urban waste separation application for subsequent treatment and recycling using a
-									Robot Scara. The objective of the project is the development of the kinematics of
-									the robot both inverse and direct, its control and the planning of the trajectories
-									that will allow the robot to solve its task.
-									<br>
-									<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span
-											class="label">YouTube</span></a>
-									<a href="https://github.com/renzo-guarise/scara" class="icon brands fa-github"><span
-											class="label">Github</span></a>
-								</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/r1.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Automation in waste separation </h4>
+									<p> Urban waste separation application for subsequent treatment and recycling using
+										a
+										Robot Scara. The objective of the project is the development of the kinematics
+										of
+										the robot both inverse and direct, its control and the planning of the
+										trajectories
+										that will allow the robot to solve its task.
+										<br>
+										<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span
+												class="label">YouTube</span></a>
+										<a href="https://github.com/renzo-guarise/scara"
+											class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/vib.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Parametric analysis of a three-degree system
-									of freedom</h4>
-								<p> This project analyzes the response of a three-story portico to an excitement at its
-									base, similar to that of the Caucete earthquake. For this, the system was simplified
-									to three degrees of freedom, where each one represented a floor, and then a
-									parametric study was made based on different damping ratios.
-									<br>
-									<a href="https://drive.google.com/file/d/1atHmDowMB-mirxkTPEoG9BF4ByruUqTb/view?usp=sharing"
-										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-								</p>
+						</div>
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/vib.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Parametric analysis of a three-degree system
+										of freedom</h4>
+									<p> This project analyzes the response of a three-story portico to an excitement at
+										its
+										base, similar to that of the Caucete earthquake. For this, the system was
+										simplified
+										to three degrees of freedom, where each one represented a floor, and then a
+										parametric study was made based on different damping ratios.
+										<br>
+										<a href="https://drive.google.com/file/d/1atHmDowMB-mirxkTPEoG9BF4ByruUqTb/view?usp=sharing"
+											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
-						<article>
-							<a class="image"><img src="images/drone.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>Drone for pest control by releasing flies </h4>
-								<p> Design of a mobile robot of the aerial type, more specifically, a drone. The
-									implemented model corresponds to a drone of 6 elics for agricultural purposes,
-									related to the control of pests by distribution of the Mediterranean fly. It is
-									proposed a sectorized control aimed at particular clients who are looking for a more
-									efficient solution than the conventional one.
-									<br>
-									<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing"
-										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-								</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/drone.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>Drone for pest control by releasing flies </h4>
+									<p> Design of a mobile robot of the aerial type, more specifically, a drone. The
+										implemented model corresponds to a drone of 6 elics for agricultural purposes,
+										related to the control of pests by distribution of the Mediterranean fly. It is
+										proposed a sectorized control aimed at particular clients who are looking for a
+										more
+										efficient solution than the conventional one.
+										<br>
+										<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing"
+											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+									</p>
+								</div>
 							</div>
-						</article>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -299,49 +375,56 @@
 					<h3>Experience</h3>
 					<div class="card">
 						<button class="collapsible" type="button">
-							<i class="fas fa-code fa-lg"></i> <FONT FACE="impact"> Web developer</font> @ Scholarship holder - NOV 2021 /
+							<i class="fas fa-code fa-lg"></i>
+							<FONT FACE="impact"> Web developer</font> @ Scholarship holder - NOV 2021 /
 							Now
 						</button>
 						<div class="content">
 							<div class="card-body">
 								<p>
 									<br>
-									Development and implementation of a web application, which allows the consultation, graphical and numerical, of the database of the Geodesy Laboratory of the UNCuyo. Visualization and statistical analysis of data. 
+									Development and implementation of a web application, which allows the consultation,
+									graphical and numerical, of the database of the Geodesy Laboratory of the UNCuyo.
+									Visualization and statistical analysis of data.
 								</p>
 								<ul class="ml-5">
-									<li> Design and creation of the laboratory website within the page of the Faculty of Engineering of the UNCuyo. </li> 
+									<li> Design and creation of the laboratory website within the page of the Faculty of
+										Engineering of the UNCuyo. </li>
 									<li> Databases (<b> SQL </b>) - Design of relational models. </li>
-									<li> Analysis of the most representative metrics of the data. </li> 
+									<li> Analysis of the most representative metrics of the data. </li>
 								</ul>
 								<p>
 									The functionalities of the app allow:
 								</p>
-								<ul class = "ml-5">
-								<li>
-								Consultation of the laboratory database.
-								</li>
-								<li>
-								View the data and its most important parameters.
-								</li>
-								<li>
-								Calculate and graph <b> statistics </b>.
-								</li> 
+								<ul class="ml-5">
+									<li>
+										Consultation of the laboratory database.
+									</li>
+									<li>
+										View the data and its most important parameters.
+									</li>
+									<li>
+										Calculate and graph <b> statistics </b>.
+									</li>
 								</ul>
-								<a href="https://youtu.be/bn5vpDVDzT8"
-										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+								<a href="https://youtu.be/bn5vpDVDzT8" class="icon brands fa-youtube"><span
+										class="label">YouTube</span></a>
 							</div>
 						</div>
+
 						<button class="collapsible" type="button">
-							<i class="fas fa-chalkboard-teacher fa-lg"></i><FONT FACE="impact">  Tutor</font> @ Freelance - JUN 2021 /
+							<i class="fas fa-chalkboard-teacher fa-lg"></i>
+							<FONT FACE="impact"> Tutor</font> @ Freelance - JUN 2021 /
 							Now
 						</button>
 						<div class="content">
 							<div class="card-body">
 								<p>
 									<br>
-									Preparation and mentoring of students for admission to the Faculty of Engineering, UNCuyo. 
+									Preparation and mentoring of students for admission to the Faculty of Engineering,
+									UNCuyo.
 								</p>
-		
+
 							</div>
 						</div>
 						<script>
@@ -350,7 +433,7 @@
 
 							for (i = 0; i < coll.length; i++) {
 								coll[i].addEventListener("click", function () {
-									this.classList.toggle("active");
+									this.classList.toggle("act");
 									var content = this.nextElementSibling;
 									if (content.style.maxHeight) {
 										content.style.maxHeight = null;
@@ -362,6 +445,26 @@
 						</script>
 					</div>
 				</div>
+
+			</section>
+			</section>
+			<section id="four">
+				<div class="container">
+					<h3>Education</h3>
+					<div class="card">
+						<div class="myheader">
+							<FONT FACE="impact"> Web developer</font> 
+						</div>
+						<div class="mycontainer">
+							<div class="card-body">
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>					  
+
 
 			</section>
 			<!-- Scripts -->
