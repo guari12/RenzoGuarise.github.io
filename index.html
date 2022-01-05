@@ -53,6 +53,7 @@
 			border-radius: 10px;
 			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 		}
+
 		.mycard {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			transition: 0.3s;
@@ -65,13 +66,13 @@
 		}
 
 		.myheader {
-			
-			background-color:white;
+
+			background-color: white;
 			color: #459983;
 			padding: 18px;
 			width: 100%;
 			border: solid;
-			border-color:#4acaa8;
+			border-color: #4acaa8;
 			border-radius: 10px 10px 0px 0px;
 			text-align: left;
 			outline: none;
@@ -79,6 +80,7 @@
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			transition: 0.3s;
 		}
+
 		.mycontainer {
 			padding: 18px;
 			width: 100%;
@@ -93,6 +95,10 @@
 
 		img.rounded-corners {
 			border-radius: 10px 10px 0px 0px;
+		}
+
+		p.mypadding {
+			padding: 5px;
 		}
 	</style>
 
@@ -122,14 +128,14 @@
 				Projects: IA | Robotic | Control | Full Stack
 			</p>
 			</p>
-			<p class="lead text-muted">
-				<i>Mendoza, Argentina</i>
-			</p>
+
 			<a class="badge badge-primary mail pop" onclick="copyToClipboard('#mymail1')" data-toggle="popover"
 				data-placement="right" data-content="Correo copiado!">
 				<span id="mymail1">renzoguari99@gmail.com</span>
 			</a>
-
+			<p class="lead text-muted">
+				<i>Mendoza, Argentina</i>
+			</p>
 		</header>
 		<nav id="nav">
 			<ul>
@@ -167,7 +173,7 @@
 							intelligence and programming. </p>
 					</header>
 					<p>I am passionate about math, data, learning, new technologies and challenges. I am self-taught and
-						very curious. 
+						very curious.
 					</p>
 				</div>
 			</section>
@@ -247,6 +253,8 @@
 										<br>
 										<a href="https://github.com/renzo-guarise/cv"
 											class="icon brands fa-github"><span class="label">Github</span></a>
+										<a href="https://youtu.be/GO26Q5ICeL4" class="icon brands fa-youtube"><span
+												class="label">YouTube</span></a>
 									</p>
 								</div>
 							</div>
@@ -270,6 +278,23 @@
 					<div class="row">
 						<div class="col-6">
 							<div class="mycard">
+								<img src="images/PMSM.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>AC Drive Control with Synchronous Magnet Motor
+										Permanent </h4>
+									<p> In this project, an automatic position and movement control system will be
+										modeled, designed, analyzed and simulated for a 4-quadrant electromechanical
+										drive composed of a synchronous three-phase alternating current (AC) electrical
+										machine with permanent magnet excitation (PMSM).
+										<br>
+										<a href="https://drive.google.com/file/d/1CPoX_H_lbbaiowxQlEQItqzKX2KUNl7k/view?usp=sharing"
+											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="mycard">
 								<img src="images/robot.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
 								<div class="container">
 									<h4>Robot Arm Control </h4>
@@ -277,14 +302,16 @@
 										an
 										ABB IRB 460 robot arm.
 										<br>
-										<a href="https://www.youtube.com/watch?v=cZLyq6MeZRs"
-											class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+										<a href="https://youtu.be/PqFfFtVRYwU" class="icon brands fa-youtube"><span
+												class="label">YouTube</span></a>
 										<a href="https://github.com/renzo-guarise/RAC"
 											class="icon brands fa-github"><span class="label">Github</span></a>
 									</p>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="row">
 						<div class="col-6">
 							<div class="mycard">
 								<img src="images/balancin.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
@@ -301,6 +328,19 @@
 											class="icon brands fa-youtube"><span class="label">YouTube</span></a>
 										<a href="https://github.com/renzo-guarise/balancin"
 											class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="mycard">
+								<img src="images/scada.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+								<div class="container">
+									<h4>SCADA/ Modbus RTU </h4>
+									<p> In this project, a SCADA system is modeled, designed, analyzed and simulated.
+										<br>
+										<a href="https://drive.google.com/file/d/1FSnBPkZ9fnoiU_8jmk9AjcWYOgrY9Byk/view?usp=sharing"
+											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
 									</p>
 								</div>
 							</div>
@@ -374,7 +414,7 @@
 				<div class="container">
 					<h3>Experience</h3>
 					<div class="card">
-						<button class="collapsible" type="button">
+						<button class="collapsible" type="button" style="margin: 0px 0px 10px 0px">
 							<i class="fas fa-code fa-lg"></i>
 							<FONT FACE="impact"> Web developer</font> @ Scholarship holder - NOV 2021 /
 							Now
@@ -411,7 +451,6 @@
 										class="label">YouTube</span></a>
 							</div>
 						</div>
-
 						<button class="collapsible" type="button">
 							<i class="fas fa-chalkboard-teacher fa-lg"></i>
 							<FONT FACE="impact"> Tutor</font> @ Freelance - JUN 2021 /
@@ -427,6 +466,7 @@
 
 							</div>
 						</div>
+
 						<script>
 							var coll = document.getElementsByClassName("collapsible");
 							var i;
@@ -453,25 +493,25 @@
 					<h3>Education</h3>
 					<div class="card">
 						<div class="myheader">
-							<a href="https://ingenieria.uncuyo.edu.ar/estudios/carrera/ingenieria-en-mecatronica" ><FONT FACE="impact"> Mechatronics Engineering</font> </a>
-							
+							<a href="https://ingenieria.uncuyo.edu.ar/estudios/carrera/ingenieria-en-mecatronica">
+								<FONT FACE="impact"> Mechatronics Engineering</font>
+							</a>
+
 						</div>
 						<div class="mycontainer">
 							<div class="card-body">
-								
-									<ul class="ml-5">
-										<li> In sixth year (last) </li>
-										<li> Sixth best average of the engineering faculty (Over 1000 students).</li>
-										<li> Second best mechatronic engineering average. </li>
-									</ul>
-									
-								
-								<a href="https://drive.google.com/file/d/1jxiKuwyLMWGmgxfCizAgBDWEFU4jFS4X/view?usp=sharing"
-											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+
+								<ul class="ml-5">
+									<li> In sixth year (last) </li>
+									<li> Sixth best average of the engineering faculty (Over 1000 students).</li>
+									<li> Second best mechatronic engineering average. </li>
+									<a href="https://drive.google.com/file/d/1jxiKuwyLMWGmgxfCizAgBDWEFU4jFS4X/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</ul>
 							</div>
 						</div>
-					</div>	
-				</div>					  
+					</div>
+				</div>
 
 
 			</section>
