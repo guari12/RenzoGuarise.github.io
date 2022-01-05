@@ -10,6 +10,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style>
+		.mycontainer2 {
+			padding: 18px;
+			width: 100%;
+			column-count: 2;
+			column-gap: 3em;
+			column-width: 250px;
+		}
+
 		.collapsible {
 			background-color: #4acaa8;
 			color: white;
@@ -141,8 +149,10 @@
 			<ul>
 				<li><a href="#one" class="active">About me</a></li>
 				<li><a href="#two">Things I Can Do</a></li>
-				<li><a href="#three">A Few Proyects</a></li>
-				<li><a href="#four">Experience</a></li>
+				<li><a href="#three">Experience</a></li>
+				<li><a href="#four">A few proyects</a></li>
+				<li><a href="#five">Education</a></li>
+				<li><a href="#six">Achievements and other activities</a></li>
 			</ul>
 		</nav>
 		<footer>
@@ -154,13 +164,10 @@
 			</ul>
 		</footer>
 	</section>
-
 	<!-- Wrapper -->
 	<div id="wrapper">
-
 		<!-- Main -->
 		<div id="main">
-
 			<!-- One -->
 			<section id="one">
 				<div class="image main" data-position="center">
@@ -236,181 +243,7 @@
 					</ul>
 				</div>
 			</section>
-
-			<!-- Three -->
 			<section id="three">
-				<div class="container">
-					<h3>A Few Projects</h3>
-					<p></p>
-					<div class="row">
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/cv.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Computer vision</h4>
-									<p>An artificial vision program for the recognition and classification of fruits. In
-										this project I implemented a hybrid kmeans algorithm and a knn algorithm.
-										<br>
-										<a href="https://github.com/renzo-guarise/cv"
-											class="icon brands fa-github"><span class="label">Github</span></a>
-										<a href="https://youtu.be/GO26Q5ICeL4" class="icon brands fa-youtube"><span
-												class="label">YouTube</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/Figure_1.jpeg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Neuronal Networks</h4>
-									<p> A clustering and a regression project that were carried out with a fully
-										connected
-										feedforward neural network.
-										<br>
-										<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span
-												class="label">Github</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/PMSM.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>AC Drive Control with Synchronous Magnet Motor
-										Permanent </h4>
-									<p> In this project, an automatic position and movement control system will be
-										modeled, designed, analyzed and simulated for a 4-quadrant electromechanical
-										drive composed of a synchronous three-phase alternating current (AC) electrical
-										machine with permanent magnet excitation (PMSM).
-										<br>
-										<a href="https://drive.google.com/file/d/1CPoX_H_lbbaiowxQlEQItqzKX2KUNl7k/view?usp=sharing"
-											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/robot.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Robot Arm Control </h4>
-									<p> Project of Graphical Interface and Client-Server Connection for the control of
-										an
-										ABB IRB 460 robot arm.
-										<br>
-										<a href="https://youtu.be/PqFfFtVRYwU" class="icon brands fa-youtube"><span
-												class="label">YouTube</span></a>
-										<a href="https://github.com/renzo-guarise/RAC"
-											class="icon brands fa-github"><span class="label">Github</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/balancin.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Balancín robot </h4>
-									<p> In this project we sought to make a rocking robot or also called an inverted
-										pendulum. To carry out this project, an accelerometer and gyroscope were used as
-										a
-										sensor to be able to calculate the angular position of the system and thus carry
-										out
-										a PID control looking for our robot to balance itself.
-										<br>
-										<a href="https://www.youtube.com/watch?v=VBSCI6RdObE"
-											class="icon brands fa-youtube"><span class="label">YouTube</span></a>
-										<a href="https://github.com/renzo-guarise/balancin"
-											class="icon brands fa-github"><span class="label">Github</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/scada.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>SCADA/ Modbus RTU </h4>
-									<p> In this project, a SCADA system is modeled, designed, analyzed and simulated.
-										<br>
-										<a href="https://drive.google.com/file/d/1FSnBPkZ9fnoiU_8jmk9AjcWYOgrY9Byk/view?usp=sharing"
-											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/r1.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Automation in waste separation </h4>
-									<p> Urban waste separation application for subsequent treatment and recycling using
-										a
-										Robot Scara. The objective of the project is the development of the kinematics
-										of
-										the robot both inverse and direct, its control and the planning of the
-										trajectories
-										that will allow the robot to solve its task.
-										<br>
-										<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span
-												class="label">YouTube</span></a>
-										<a href="https://github.com/renzo-guarise/scara"
-											class="icon brands fa-github"><span class="label">Github</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/vib.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Parametric analysis of a three-degree system
-										of freedom</h4>
-									<p> This project analyzes the response of a three-story portico to an excitement at
-										its
-										base, similar to that of the Caucete earthquake. For this, the system was
-										simplified
-										to three degrees of freedom, where each one represented a floor, and then a
-										parametric study was made based on different damping ratios.
-										<br>
-										<a href="https://drive.google.com/file/d/1atHmDowMB-mirxkTPEoG9BF4ByruUqTb/view?usp=sharing"
-											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6">
-							<div class="mycard">
-								<img src="images/drone.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
-								<div class="container">
-									<h4>Drone for pest control by releasing flies </h4>
-									<p> Design of a mobile robot of the aerial type, more specifically, a drone. The
-										implemented model corresponds to a drone of 6 elics for agricultural purposes,
-										related to the control of pests by distribution of the Mediterranean fly. It is
-										proposed a sectorized control aimed at particular clients who are looking for a
-										more
-										efficient solution than the conventional one.
-										<br>
-										<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing"
-											class="icon brands fa-google-drive"><span class="label">Drive</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="four">
 				<div class="container">
 					<h3>Experience</h3>
 					<div class="card">
@@ -485,10 +318,165 @@
 						</script>
 					</div>
 				</div>
-
 			</section>
-			</section>
+			<!-- Three -->
 			<section id="four">
+				<div class="container">
+						<h3>A Few Projects</h3>
+						<p></p>
+						<div class="mycontainer2">
+						<div class="mycard">
+							<img src="images/cv.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Computer vision</h4>
+								<p>An artificial vision program for the recognition and classification of fruits. In
+									this project I implemented a hybrid kmeans algorithm and a knn algorithm.
+									<br>
+									<a href="https://github.com/renzo-guarise/cv" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+									<a href="https://youtu.be/GO26Q5ICeL4" class="icon brands fa-youtube"><span
+											class="label">YouTube</span></a>
+								</p>
+							</div>
+						</div>
+						<div class="mycard">
+							<img src="images/Figure_1.jpeg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Neuronal Networks</h4>
+								<p> A clustering and a regression project that were carried out with a fully
+									connected
+									feedforward neural network.
+									<br>
+									<a href="https://github.com/guari12/ML" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mycontainer2">
+						<div class="mycard">
+							<img src="images/PMSM.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>AC Drive Control with Synchronous Magnet Motor
+									Permanent </h4>
+								<p> In this project, an automatic position and movement control system will be
+									modeled, designed, analyzed and simulated for a 4-quadrant electromechanical
+									drive composed of a synchronous three-phase alternating current (AC) electrical
+									machine with permanent magnet excitation (PMSM).
+									<br>
+									<a href="https://drive.google.com/file/d/1CPoX_H_lbbaiowxQlEQItqzKX2KUNl7k/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</div>
+						<div class="mycard">
+							<img src="images/robot.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Robot Arm Control </h4>
+								<p> Project of Graphical Interface and Client-Server Connection for the control of
+									an
+									ABB IRB 460 robot arm.
+									<br>
+									<a href="https://youtu.be/PqFfFtVRYwU" class="icon brands fa-youtube"><span
+											class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/RAC" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mycontainer2">
+						<div class="mycard">
+							<img src="images/balancin.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Balancín robot </h4>
+								<p> In this project we sought to make a rocking robot or also called an inverted
+									pendulum. To carry out this project, an accelerometer and gyroscope were used as
+									a
+									sensor to be able to calculate the angular position of the system and thus carry
+									out
+									a PID control looking for our robot to balance itself.
+									<br>
+									<a href="https://www.youtube.com/watch?v=VBSCI6RdObE"
+										class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/balancin"
+										class="icon brands fa-github"><span class="label">Github</span></a>
+								</p>
+							</div>
+						</div>
+						<div class="mycard">
+							<img src="images/scada.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>SCADA/ Modbus RTU </h4>
+								<p> In this project, a SCADA system is modeled, designed, analyzed and simulated. The
+									objective of the system is the monitoring of a process implemented in a PLC,
+									allowing the operator to have a complete view of the process variables.
+									<br>
+									<a href="https://drive.google.com/file/d/1FSnBPkZ9fnoiU_8jmk9AjcWYOgrY9Byk/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mycontainer2">
+						<div class="mycard">
+							<img src="images/r1.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Automation in waste separation </h4>
+								<p> Urban waste separation application for subsequent treatment and recycling using
+									a
+									Robot Scara. The objective of the project is the development of the kinematics
+									of
+									the robot both inverse and direct, its control and the planning of the
+									trajectories
+									that will allow the robot to solve its task.
+									<br>
+									<a href="https://youtu.be/KNYCbL-GsnU" class="icon brands fa-youtube"><span
+											class="label">YouTube</span></a>
+									<a href="https://github.com/renzo-guarise/scara" class="icon brands fa-github"><span
+											class="label">Github</span></a>
+								</p>
+							</div>
+						</div>
+						<div class="mycard">
+							<img src="images/vib.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Parametric analysis of a three-degree system
+									of freedom</h4>
+								<p> This project analyzes the response of a three-story portico to an excitement at
+									its
+									base, similar to that of the Caucete earthquake. For this, the system was
+									simplified
+									to three degrees of freedom, where each one represented a floor, and then a
+									parametric study was made based on different damping ratios.
+									<br>
+									<a href="https://drive.google.com/file/d/1atHmDowMB-mirxkTPEoG9BF4ByruUqTb/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mycontainer2" style="width: 385px;">
+						<div class="mycard">
+							<img src="images/drone.jpg" alt="Avatar" style="width:100%" class="rounded-corners">
+							<div class="container">
+								<h4>Drone for pest control by releasing flies </h4>
+								<p> The
+									implemented model corresponds to a drone of 6 elics for agricultural purposes,
+									related to the control of pests by distribution of the Mediterranean fly. It is
+									proposed a sectorized control aimed at particular clients who are looking for a
+									more
+									efficient solution than the conventional one.
+									<br>
+									<a href="https://drive.google.com/file/d/1Q98U1FB9nAnuBtr_FIUUn_AyHvN5-Osp/view?usp=sharing"
+										class="icon brands fa-google-drive"><span class="label">Drive</span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="five">
 				<div class="container">
 					<h3>Education</h3>
 					<div class="card">
@@ -512,8 +500,14 @@
 						</div>
 					</div>
 				</div>
-
-
+			</section>
+			<section id="six">
+				<div class="container">
+					<h3>Achievements and others activities</h3>
+					<p></p>
+			
+					</div>
+				</div>
 			</section>
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
